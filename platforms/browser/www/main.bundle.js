@@ -1361,7 +1361,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var WebsocketComponent = (function () {
     function WebsocketComponent(websocketService) {
         this.webSocketService = websocketService;
-        this.webSocketConfig = new __WEBPACK_IMPORTED_MODULE_2__services_websocketService_WebSocketConfig__["a" /* WebSocketConfig */]("ws://localhost:60918/AircraftWebSocket/", undefined);
+        this.webSocketConfig = new __WEBPACK_IMPORTED_MODULE_2__services_websocketService_WebSocketConfig__["a" /* WebSocketConfig */]("ws://192.168.1.14:60918/AircraftWebSocket/", undefined);
         this.title = "Web Socket Test";
         this.messages = new Array();
     }
@@ -1742,7 +1742,7 @@ var JwtHelperService = (function () {
         this.http = http;
     }
     JwtHelperService.prototype.isTokenExpired = function () {
-        return this.http.get('http://localhost:3000/api/checkTokenExp').map(function (response) {
+        return this.http.get('http://192.168.1.14:3000/api/checkTokenExp').map(function (response) {
             console.log(response);
             return response;
         }, function (response) {
