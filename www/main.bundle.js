@@ -1412,14 +1412,14 @@ var _a;
  * New typescript file
  */
 var APP_DI_CONFIG = {
-    apiEndpoint: 'localhost:3000/api',
+    apiEndpoint: '192.168.1.14:3000/api',
     appName: 'Employee Managment',
     version: '0.0.0',
     logoUrl: 'https://logopond.com/assets/img/logo-footer.png',
     logoWidth: 250,
     logoHeight: 250,
-    loginAddress: 'http://localhost:3000/api/login',
-    userAddress: 'http://localhost:3000/api/users'
+    loginAddress: 'http://192.168.1.14:3000/api/login',
+    userAddress: 'http://192.168.1.14:3000/api/users'
 };
 //# sourceMappingURL=app-config.js.map
 
